@@ -17,19 +17,58 @@ body {
     font-weight: 400;
 }
 
-/*////////////////////////
-    2. Typography
-////////////////////////*/
+html {
+    background-color: #F9C48B;
+}
 
 
+    /*////////////////////////
+        2. Typography
+    ////////////////////////*/
+    /*////////////////////////
+        3. Areas
+    ////////////////////////*/
+section {
+    background-color: #FDEFEC;
+    border-radius: 7px;
+    padding: 1em 1.5em 1.5em 1em;
+    margin-bottom: 5em;
+}
 
-/*////////////////////////
-    3. Areas
-////////////////////////*/
+.flex {
+    display: flex;
+}
 
+img {
+    width: 100%;
+    max-width: 1000px;
+    flex-grow: 1;
+}
 
+    /*////////////////////////
+        2. Media Queries
+    ////////////////////////*/
+    /* Geld voor alles kleiner dan 768px, telefoons */
+    p {
+        font-size: 1rem;
+    }
 
+    /* Minimaal 768px betekend regels die gelden voor tablets */
+    @media screen and (min-width: 768px) {
+        html {
+            background-color: #f69051;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
 
-/*////////////////////////
-    2. Media Queries
-////////////////////////*/
+    /* Minimaal 992px betekend regels die gelden voor kleine computerschermen */
+    @media screen and (min-width: 992px) {
+        html {
+            background-color: #F26D40;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+    }
